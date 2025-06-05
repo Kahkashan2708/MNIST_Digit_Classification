@@ -81,11 +81,11 @@ To better understand the model's performance across digit classes, here’s the 
 
 ### Example Architecture:
 ```python
-model = Sequential([
-    Flatten(input_shape=(28, 28)),
-    Dense(128, activation='relu'),
-    Dense(64, activation='relu'),
-    Dense(10, activation='softmax')
+model=keras.Sequential([
+                         keras.layers.Flatten(input_shape=(28,28)),
+                         keras.layers.Dense(50,activation='relu'),
+                         keras.layers.Dense(50,activation='relu'),
+                         keras.layers.Dense(10,activation='sigmoid')
 ])
 ```
 
