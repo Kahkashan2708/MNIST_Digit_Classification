@@ -64,7 +64,7 @@ The MNIST dataset is a benchmark dataset containing 70,000 grayscale images of h
 
 To better understand the model's performance across digit classes, here’s the visualized confusion matrix:
 
-![Confusion Matrix Heatmap](confusion_matrix.png)
+![Confusion Matrix Heatmap](Heatmap.png)
 
 
 ##  Dataset Info
