@@ -60,27 +60,12 @@ The MNIST dataset is a benchmark dataset containing 70,000 grayscale images of h
 - Confusion matrix and heatmap reveal model strengths and areas for improvement.
 
 ---
+###  Confusion Matrix Heatmap
 
-##  Heatmap of Confusion Matrix
+To better understand the model's performance across digit classes, here’s the visualized confusion matrix:
 
-A confusion matrix was generated to evaluate class-wise performance. The heatmap (using `seaborn.heatmap`) helps visualize which digits were most commonly confused by the model.
+![Confusion Matrix Heatmap](confusion_matrix.png)
 
-```python
-from sklearn.metrics import confusion_matrix
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-# Example usage (replace y_true and y_pred with actual labels)
-cm = confusion_matrix(y_true, y_pred)
-plt.figure(figsize=(10,8))
-sns.heatmap(cm, annot=True, fmt="d", cmap="Blues", xticklabels=range(10), yticklabels=range(10))
-plt.xlabel("Predicted")
-plt.ylabel("Actual")
-plt.title("Confusion Matrix Heatmap")
-plt.show()
-```
-
----
 
 ##  Dataset Info
 
@@ -109,12 +94,6 @@ model = Sequential([
 - **Output Layer**: Dense layer with 10 neurons and softmax activation for multi-class classification
 
 ---
-###  Confusion Matrix Heatmap
-
-To better understand the model's performance across digit classes, here’s the visualized confusion matrix:
-
-![Confusion Matrix Heatmap](confusion_matrix.png)
-
 
 
 ##  Conclusion
