@@ -79,7 +79,7 @@ To better understand the model's performance across digit classes, here’s the 
 
 ##  Model Architecture
 
-### Example Architecture:
+
 ```python
 model=keras.Sequential([
                          keras.layers.Flatten(input_shape=(28,28)),
@@ -90,7 +90,7 @@ model=keras.Sequential([
 ```
 
 - **Input Layer**: Flattens 28x28 image into 784-d vector
-- **Hidden Layers**: Fully connected (Dense) layers with ReLU
+- **Hidden Layers**: Fully connected two hidden with 50 neurons with ReLU activation function
 - **Output Layer**: Dense layer with 10 neurons and softmax activation for multi-class classification
 
 ---
